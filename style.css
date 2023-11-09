@@ -1,146 +1,73 @@
-body {
+
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
-    overflow: hidden;
-
+    box-sizing: border-box;
 }
-
-.background {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+body {
     display: flex;
-    justify-content: center;
+    height: 100vh;
     align-items: center;
-   
+    justify-content: space-evenly;
 }
 
-.background video{
+.logo-mario{
+    width: 300px;
+}
+
+.imagem-mario-luigi{
+    height: 480px;
+    width: 400px;
+}
+
+img {
+    width: 200px;
+
+}
+
+.caixa-principal{
+    width: 40%;
+
+}
+
+.caixa-video-mario{
     position: fixed;
     top: 0;
-    left: 0;
-    object-fit: cover;
+    z-index: -1;
     width: 100%;
+    height: 100%;
 }
 
-.left {
-    position: relative;
-    z-index: auto;
-    margin-top: 8%;
-    margin-left: 5%;
-    
-         
-
-}
-
-.left img {
-    width: 30%;
-    height: 50%;
+video {
+    position: fixed;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
 
 }
 
-.left p{
-    color:white;
-    text-align: left;
-    width: 45%;
-    height: 30%;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: justify;
-    
-  
-   
+.marcara-video{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(100deg, rgba(10, 12, 16, 0.7) 50%, rgba(10 ,12, 16, 0.99) 85%);
 }
 
-.left button{
-    border-radius: 30px;
-    height: 64px;
-    width: 239px;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
-    cursor: pointer;
-    background-color: red;
+p{
     color: white;
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: justify;
 }
 
-
-
-.right img {
-    position:absolute;
-    z-index: auto;
-    width: 30%;
-    height: 70%;
-    margin-right: 10%;
-    top:20%;
-    right: 5%;
- 
-        
-}
-
-@media screen and (max-width: 900px){
-
-    .background {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    }
-    
-    .background video{
-       position: static;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        width: 100%;
-    }
-    
-    .left {
-        position: relative;
-        z-index: auto;
-        margin-top: 8%;
-        margin-left: 5%;
-        
-             
-    
-    }
-    
-    .left img {
-        display: none;
-    }
-    
-    .left p{
-        display: none;
-        
-      
-       
-    }
-     
-    
-    .right img {
-        position:static;
-        width: 94%;
-        height: 30%;
-        align-items: center;
-        top:30%;
-       
-     
-            
-    }
-    .left button{
-        border-radius: 30px;
-        height: 64px;
-        width: 357px;
-        font-weight: 700;
-        font-size: 37px;
-        line-height: 34px;
-        cursor: pointer;
-        background-color: red;
-        color: white;
-    }
-    
+button{
+    height: 40px;
+    width: 200px;
+    background: #C51111;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
