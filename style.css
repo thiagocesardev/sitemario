@@ -117,3 +117,33 @@ textarea{
 }
 
 
+@media screen and (max-width: 768px){
+    p {
+       display: none;
+    }
+
+    button{
+        display: none;
+    }
+    .fale-conosco{
+        display: none;
+    }
+
+    .imagem-mario-luigi{
+        height: 280px;
+        width: 200px;
+        text-align: center;
+        display: flex;
+        
+        
+       
+
+       
+    }
+
+    .logo-mario{
+      
+    
+    }
+}
+
