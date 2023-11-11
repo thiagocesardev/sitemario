@@ -11,28 +11,55 @@
 <body>
     <div class="caixa-video-mario">
         <video src="./assets/video.mp4" type="video/mp4" muted loop autoplay></video>
-  
-    <div class="marcara-video"></div>
-</div>
-  
+
+        <div class="marcara-video"></div>
+    </div>
+
 
     <div class="caixa-principal">
-        <img src="./assets/logo.png" alt="logo-super mario" class="logo-mario"  />
-      <p>SUPER MARIO BROS</p>
+        <img src="./assets/logo.png" alt="logo-super mario" class="logo-mario" />
+        <p>SUPER MARIO BROS</p>
         <p> The film is based on the video game series, and shows Maria as a plumber anyone in the
             Brooklyn neighborhood with his brother Luigi.
             One Day, the duo will stop the mushroom kingdom, ruled by Princess Peach, but theatend
             by Browser king of the Koopas
         </p>
-        <button>Contact us</button>
+        <button onclick="cliqueNoBotao ()">Contact us</button>
 
     </div>
 
     <div>
-        <img src="./assets/mario.png" alt="logo-mario" class="imagem-mario-luigi"  />
+        <img src="./assets/mario.png" alt="logo-mario" class="imagem-mario-luigi" />
 
     </div>
 
+    <form class="fale-conosco">
+        <h1>What is your doubt?</h1>
+        <input placeholder="Your name" type="text">
+        <input placeholder="Your phone" type="tel">
+        <textarea placeholder="Enter your expectation"></textarea>
+        <button class="sumirFormula" onclick="sumirFormula">To send</button>
+    </form>
+
+    <div class="mascara-form"></div>
 </body>
+
+<script>
+
+let formulario = document.querySelector (".fale-conosco")
+let mascara = document.querySelector (".mascara-form")
+function cliqueNoBotao (){
+    formulario.style.left = "900px"
+    mascara.style.visibility ="visible"
+}
+
+function sumirFormula (){
+    formulario.style.left = "-320px"
+    mascara.style.visibility = "hidden"
+}
+
+
+
+</script>
 
 </html>
